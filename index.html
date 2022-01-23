@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy-bird</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="game">
+        <div class="wall"></div>
+        <div class="door"></div>
+        <img src="public/images/bird1.png" class="bird">
+        <div class="score">
+            <p>score : <span class="result">0</span></p>
+        </div>
+        <div class="game-over">
+            <img class="game-Over-img" src="public/images/bird1.png">
+            <p class="game-over-title">game over</p>
+            <div class="fainal-score">
+                <p>Your Score : <span class="resultFainal">0</span></p>
+            </div>
+            <a href="#" class="restart">restart</a>
+            <a href="#" class="character">character</a>
+        </div>
+
+        <div class="all-Birds">
+            <img class="imgCharacter" src="public/images/bird1.png">
+            <img class="imgCharacter" src="public/images/bird2.png">
+            <img class="imgCharacter" src="public/images/bird3.png">
+            <img class="imgCharacter" src="public/images/bird4.png">
+            <img class="imgCharacter" src="public/images/bird5.png">
+            <img class="imgCharacter" src="public/images/bird6.png">
+        </div>
+
+        <div class="start-game">
+            <img src="public/images/start.jpg">
+            <h3 class="startbtn">click me to start</h3>
+        </div>
+    </div>
+
+    <script src="public/js/app.js"></script>
+</body>
+
+</html>
