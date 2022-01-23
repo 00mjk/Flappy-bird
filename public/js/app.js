@@ -32,7 +32,7 @@ function hideStartGame() {
     //door top Random
     //update Score By animationiteration Event
     door.addEventListener('animationiteration', function () {
-        let randomTop = -((Math.random() * 500) + 200)
+        let randomTop = -((Math.random() * 500) + 175)
         door.style.top = randomTop + 'px'
         //call Score Function
         scoreCount++
@@ -48,7 +48,7 @@ function hideStartGame() {
 
         let wallLeft = parseInt(getComputedStyle(wall).getPropertyValue('left'))
         let doorTop = parseInt(getComputedStyle(door).getPropertyValue('top'))
-        let cTop = -(700 - birdTop);
+        let cTop = -(630 - birdTop);
         if ((birdTop > 680) || ((wallLeft < 20) && (wallLeft > -50) && ((cTop < doorTop) || (cTop > doorTop + 130)))) {
             //bird daed Call GameOver Function
             gameOverHandler()
